@@ -6,7 +6,9 @@ import { browserHistory } from 'react-router';
 import rootReducer from './Reducers/index';
 
 //import data
-import { comments, posts } from './data';
+import { comments } from './data/comments';
+import { posts } from './data/posts';
+
 
 //create Obj for default data
 const defaultState = {
@@ -15,7 +17,7 @@ const defaultState = {
 };
 
 //create store and history
-const store = createStore(rootReducer, defaultState);
+const store = createStore(rootReducer, defaultState,  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 export const history = syncHistoryWithStore(browserHistory, store);
 
