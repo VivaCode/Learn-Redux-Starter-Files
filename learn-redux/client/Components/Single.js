@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 
-const Single = React.createClass({
+export default class Single extends Component {
     render() {
         return (
             <div className='single-photo'>
@@ -9,6 +9,5 @@ const Single = React.createClass({
             </div>
         )
     }
-});
+}
 
-export default Single;

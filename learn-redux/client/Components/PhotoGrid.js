@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 
 
-const Single = React.createClass({
+export default class PhotoGrid extends Component{
     render() {
         return (
             <div className='photo-grid'>
@@ -10,6 +10,4 @@ const Single = React.createClass({
             </div>
         )
     }
-});
-
-export default Single;
+}
